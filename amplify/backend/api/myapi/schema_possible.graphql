@@ -11,8 +11,11 @@ type Driver @model {
 type DriveTime @model @key(name: "byDriverId", fields: ["driverId"]) {
   id: ID!
   driverId: String
-  startDateTime: String
-  stopDateTime: String
+  startDate: String
+  startTime: String
+  stopDate: String
+  stopTime: String
+  dayTime: false
   type: DriveType
 }
 
@@ -20,6 +23,7 @@ type MetaData {
   driveType: DriveType
 }
 enum DriveType {
-  NightTime
-  DayTime
+  Rural
+  Urban
+  Both
 }
