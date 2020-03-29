@@ -1,0 +1,29 @@
+type Driver @model {
+  id: ID!
+  userId: String
+  firstName: String
+  lastName: String
+  email: String
+  token: String
+  driveTimes: [DriveTime] @connection(keyName: "byDriverId", fields: ["id"])
+}
+
+type DriveTime @model @key(name: "byDriverId", fields: ["driverId"]) {
+  id: ID!
+  driverId: String
+  startDate: String
+  startTime: String
+  stopDate: String
+  stopTime: String
+  dayTime: false
+  type: DriveType
+}
+
+type MetaData {
+  driveType: DriveType
+}
+enum DriveType {
+  Rural
+  Urban
+  Both
+}

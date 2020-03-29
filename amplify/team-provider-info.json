@@ -1,0 +1,15 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-morenav2-develop-155114-authRole",
+            "UnauthRoleArn": "arn:aws:iam::513313892209:role/amplify-morenav2-develop-155114-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::513313892209:role/amplify-morenav2-develop-155114-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-morenav2-develop-155114-deployment",
+            "UnauthRoleName": "amplify-morenav2-develop-155114-unauthRole",
+            "StackName": "amplify-morenav2-develop-155114",
+            "StackId": "arn:aws:cloudformation:us-east-1:513313892209:stack/amplify-morenav2-develop-155114/7e6747e0-6c76-11ea-b61c-12f0216d258f",
+            "AmplifyAppId": "d2sns58ghl52pg"
+        }
+    }
+}
